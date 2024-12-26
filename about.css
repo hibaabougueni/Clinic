@@ -1,0 +1,249 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.head {
+    padding: 150px 80px;
+    position: relative; 
+    margin-top: -70px;
+    background-image: url('./images/bg5.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height:60vh;
+}
+.head h1{
+    margin-top:40px;
+
+}
+.image{
+    position: absolute;
+    top: 230px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.sec{
+    background-image: url('./images/bg6.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height:57vh;
+    text-align: center;
+    padding: 20px; 
+    color:white;
+}
+.sec h3{
+    margin-top:170px;
+    font-size:20px;
+    font-weight:650;
+}
+.sec h6{
+    margin-top:20px;
+    font-size:15px;
+    font-weight:normal;
+
+}
+.par-three{
+    display:grid;
+    gap:30px;
+    margin:110px 0;
+    align-items:center;
+    justify-items: center;
+}
+.par-three .first-one{
+    display:flex;
+}
+.infos{
+    margin-left:20px;
+}
+.infos h1{
+    font-weight:700;
+}
+.info h6{
+    font-weight:normal;
+}
+.servs{
+    display:grid;
+    gap:30px;
+    align-items:center;
+    justify-items: center;
+}
+@media (min-width: 1200px) {
+    .servs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .spons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .par-three{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .servs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .spons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .par-three{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 994px) {
+    .servs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .spons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .par-three{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .servs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .spons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .par-three{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 567px) {
+    .servs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .spons {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .par-three{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.ser a {
+    padding: 0.5rem 1.2rem;
+    border: 2px solid white;
+    padding:0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size:0.8rem;
+    font-weight: bold;
+    font-size:0.8rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    margin:15px 0;
+    transition:scale 0.2 ease;
+    color:white;
+}
+.image img {
+    width: 450px;
+    height: 40vh;
+    max-width: 450px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    .head h1 {
+        font-size: 1.5rem; 
+    }
+
+    .sec h3, .sec h6 {
+        font-size: 0.8rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    .head h1 {
+        font-size: 1.25rem; 
+    }
+
+    .sec h3, .sec h6 {
+        font-size: 0.7rem; 
+    }
+
+    .sec {
+        padding: 10px;
+    }
+}
+
+
+.ser a:hover{
+    scale:1.05;
+    
+}
+.ser a:active{
+    scale:0.95;
+}
+.par-four{
+    background-image: url('./images/bg3.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color:white;
+}
+.par-four h2{
+    text-align:center; 
+    padding:25px;
+}
+.ser{
+    margin:20px;
+}
+.ser .icon{
+    display: flex;
+}
+.ser .icon h4{
+    margin:5px;
+}
+.ser p{
+    font-weight:normal;
+    color: #ebe9e9;
+    font-size:14px;
+    margin:10px 0;
+}
+
+.par-six{
+    padding:90px 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('./images/pattern2.png'); 
+    
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.par-six a{
+    padding: 0.5rem 1.2rem;
+    border: 2px solid #851717;
+    background:#851717;
+    color:white;
+    padding:0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size:0.8rem;
+    font-weight: bold;
+    font-size:0.8rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    transition:scale 0.2 ease;
+    margin:20px;
+}
+.par-six a:hover{
+    scale:1.05;
+    
+}
+.par-six a:active{
+    scale:0.95;
+}

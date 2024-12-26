@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css" >
+    <title>Contact</title>
+    <link rel="icon" href="./images/logoAlhikma.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logoAlhikma.png" alt="logo" width="55px" height="55px" style="margin-bottom:7px" />
+                <img src="./images/name.png" alt="logo" width="170px" height="50px"/>
+            </div>
+            <ul class="links">
+                <li class="link"><a href="/index.html">Accueil</a></li>
+                <li class="link"><a href="/apropos.html">A propos</a></li>
+                <li class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./cardiology.html">Cardilogie</a></li>
+                      <li><a class="dropdown-item" href="./radiologie.html">Radiologie</a></li>
+                      <li><a class="dropdown-item" href="./consultation.html">Consultation</a></li>
+                      <li><a class="dropdown-item" href="./gynecology.html">Gynécologie</a></li>
+                      <li><a class="dropdown-item" href="./ophtamology.html">Ophtalmologie</a></li>
+                    </ul>
+                </li>
+                <li class="link"><a href="/galerie.html">Galerie</a></li>
+                <li class="link"><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="num">
+                <h6>+212 5 28 89 01 01</h6>
+                <h6>+212 5 28 99 21 21</h6>
+            </div>
+            
+            <a href="/rejoignez.html" class="action_btn">Rejoignez-nous</a>
+            <div class="toggle_btn">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/apropos.html">A propos</a></li>
+                <li class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./cardiology.html">Cardiologie</a></li>
+                      <li><a class="dropdown-item" href="./radiologie.html">Radiologie</a></li>
+                      <li><a class="dropdown-item" href="./consultation.html">Consultation</a></li>
+                      <li><a class="dropdown-item" href="./gynecology.html">Gynécologie</a></li>
+                      <li><a class="dropdown-item" href="./ophtamology.html">Ophtalmologie</a></li>
+                      
+                    </ul>
+                </li>
+                <li><a href="/galerie.html">Galerie</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            <li class="num">
+                <h6>+212 5 28 89 01 01</h6>
+                <h6>+212 5 28 99 21 21</h6>
+            </li>
+            <li><a href="/rejoignez.html" class="action_btn">Rejoignez-nous</a></li>
+        </div>
+    </header>
+
+    <div class="contact_page">
+        <div class="row">
+        <div class="formulaire col-lg-6 col-md-6 col-12">
+        <h2>Contactez-nous</h2>
+        <!--                                         TO BE CHANGED !!!!!!!!!!!                                  -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="fline row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <input type="hidden" name="access_key" value="653a9517-9ca2-48be-b8b2-cedc510b4e95">
+                   <label for="prenom">Prénom:</label><br>
+                    <input class="form-control" type="text" placeholder="Prénom" aria-label="prenom" name="prenom"> 
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label for="nom">Nom:</label><br>
+                    <input class="form-control" type="text" placeholder="Nom" aria-label="nom" name="nom">
+                </div>
+            </div>
+            <div class="row">
+                <label for="email">Email:</label><br>
+                <input class="form-control" type="text" placeholder="Email" aria-label="email" name="email">
+            </div>
+            <div class="row">
+                <label for="phone">Téléphone:</label><br>
+                <input class="form-control" type="text" placeholder="Téléphone" aria-label="phone" name="phone">
+            </div>
+            <div class="row">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" placeholder="Message..." rows="5" name="message"></textarea>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn sub">Envoyer</button>
+            </div>
+        </form>
+    </div>
+    <div class="map col-lg-6 col-md-6 col-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14201.461682442503!2d-13.1904194!3d27.1447906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc37736cdde18d2f%3A0x32fe80fe03d7fe4e!2zQWwgSGlrbWEgTWVkaWNhbCBDZW50ZXIg2KfZhNmF2KzZhdi5INin2YTYt9io2Yog2KfZhNit2YPZhdip!5e0!3m2!1sen!2s!4v1723541910113!5m2!1sen!2s" 
+        width="100%" height="730" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="one">
+                <div class="images">
+                    <img src="./images/logoAlhikma.png" alt="logo" width="90px" height="90px"/>
+                    <img src="./images/name.png" alt="Al hikma" width="190px" height="80px"/>
+                </div>
+                <div class="contact">
+                    <i class="bi bi-geo-alt"></i>
+                    <h6> Mahaj mohamed 6, route Es semara, Laayoune 70000</h6>
+                </div>
+                <div class="contact">
+                    <i class="bi bi-envelope"></i>
+                    <h6> contact@alhikmamedical.ma</h6>
+                </div>
+                <div class="contact">
+                    <i class="bi bi-telephone"></i>
+                    <h6> +212 5 28 99 99 10 </h6>
+                </div>
+                <div class="reseaux">
+                    <a href="https://web.facebook.com/profile.php?id=61552652361290" target="_blank" class="social-icon">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alhikmamedicalcenter/" target="_blank" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="./index.html" target="_blank" class="social-icon">
+                        <i class="bi bi-globe2"></i>
+                    </a>
+                </div> 
+            </div>
+
+            <div class="two">
+                <h6><a href="./index.html">Accueil</a></h6>
+                <h6><a href="./apropos.html">A propos</a></h6>
+                <h6><a href="./contact.html">Contact</a></h6>
+                <h6><a href="./rejoignez.html">Rejoignez-nous</a></h6>
+            </div>
+            <div class="three">
+                <div>
+                    <h6><a href="./radiologie.html">Radiologie</a></h6>
+                    <h6><a href="./consultation.html">Consultation</a></h6>
+                    <h6><a href="./gynecology.html">Gynécologie</a></h6>
+                    <h6><a href="./ophtamology.html">Ophtalmologie</a></h6>
+                    <h6><a href="./cardiology.html">Cardiologie</a></h6>
+                </div>
+                <div class="end">
+                    <h6> &copy; 2024 All rights reserved</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn=document.querySelector('.toggle_btn')
+        const toggleBtnIcon=document.querySelector('.toggle_btn i')
+        const dropDownMenu=document.querySelector('.dropdown_menu')
+        toggleBtn.onclick=function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen=dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList=isOpen
+            ? 'bi bi-list' : 'bi bi-list'
+        }
+    </script>
+</body>
+</html>
